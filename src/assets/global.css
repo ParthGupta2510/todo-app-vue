@@ -1,0 +1,94 @@
+body {
+  font-family: sans-serif;
+  background-color: #F2F2F2;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  text-align: center;
+}
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.task.completed {
+  background-color: #EFEFEF;
+  text-decoration: line-through;
+}
+.task .actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.task input[type="checkbox"] {
+  margin-right: 10px;
+}
+.task input[type="text"] {
+  flex: 1;
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+.task button {
+  padding: 5px 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.task button:hover {
+  background-color: #EFEFEF;
+}
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.filter-buttons button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.filter-buttons button.active {
+  background-color: #CCCCCC;
+}
+.sort-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.sort-buttons button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sort-buttons button:hover {
+  background-color: #EFEFEF;
+}
+.task-list li.placeholder {
+  height: 40px;
+  background-color: #EFEFEF;
+}
